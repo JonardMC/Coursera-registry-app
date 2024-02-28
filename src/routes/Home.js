@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 function Home(){
     return(
-        <div>
+        <div className="box">
             <h1>Home</h1>
             <Link to="/registry">Click to head to registry</Link>
         </div>

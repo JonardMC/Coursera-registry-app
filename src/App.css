@@ -1,5 +1,38 @@
+body {
+  background-color: grey
+}
+
+
+.box {
+  background-color: white;
+  width: 400px;
+  color: black;
+  outline: 4px solid #1C6EA4;
+  outline-offset: 0px;
+  -webkit-box-shadow: 5px 5px 15px 5px #000000; 
+  box-shadow: 5px 5px 15px 5px #000000;
+  padding: 10px;
+  margin-top: 10px;
+
+}
+
+.inputbox {
+  background-color: white;
+  width: 400px;
+  color: black;
+  outline: 4px solid green;
+  outline-offset: 0px;
+  margin-top: 10px;
+  padding: 10px;
+
+}
+
+.space{
+  height: 100px;
+}
+
 .App {
-  text-align: center;
+  text-align: left;
 }
 
 .App-logo {
@@ -14,14 +47,14 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #2762d8;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: rgb(170, 24, 24);
 }
 
 .App-link {
@@ -35,4 +68,34 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+
+.myButton {
+  color: rgb(255, 255, 251);
+  font-size: 16px;
+  line-height: 16px;
+  padding: 16px;
+  border-radius: 23px;
+  font-family: Georgia, serif;
+  font-weight: normal;
+  text-decoration: none;
+  font-style: normal;
+  font-variant: normal;
+  text-transform: none;
+  background-image: linear-gradient(
+    to right,
+    rgb(28, 110, 164) 0%,
+    rgb(35, 136, 203) 43%,
+    rgb(20, 78, 117) 100%
+  );
+  box-shadow: rgb(0, 0, 0) 5px 5px 15px 5px;
+  border: 2px solid rgb(28, 110, 164);
+  display: inline-block;
+}
+.myButton:hover {
+  background: #1c6ea4;
+}
+.myButton:active {
+  background: #144e75;
 }

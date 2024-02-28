@@ -1,33 +1,30 @@
-import React, {useState} from 'react';
-import {BrowserRouter , Switch, Route, Link} from "react-router-dom"
+import React , {useState} from 'react';
+import {BrowserRouter, Switch , Route, Link} from "react-router-dom"
 import Home from "./routes/Home"
-import Registry from "./routes/Registry"
+import Registry from "./routes/Registry.js"
 import './App.css';
+import './routes/Registry.css';
 
 function App(){
     //const [name, setName] = useState("")
-
+    document.body.style.backgroundColor = "#B2BEB5";
     return(
         <div className="App">
           <BrowserRouter>
-          <Switch>
+            <Switch>
               <Route path="/" exact>
                 <Home />
               </Route>
-              <Route path="/registry">
+                <Route path="/registry">
                 <Registry />
               </Route>
-          </Switch>
+            </Switch>
           </BrowserRouter>
-            {/* <button onClick={() => setName("hello")} > Set Name</button>
-        <MyComponent name = {name}/> */}
+
         </div>
     )
 }
 
-// function MyComponent(props){
-//     return <h1>{props.name}</h1>
-// }
 
 export default App;
 

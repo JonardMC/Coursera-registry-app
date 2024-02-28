@@ -1,5 +1,7 @@
 import React, { useState , useEffect} from "react";
 import { Link } from "react-router-dom";
+import './Registry.css';
+
 
 function Registry(){
     const [registryData, setRegistryData] = useState([])
@@ -39,13 +41,17 @@ function Registry(){
 
     return(
         <div>
-            <h1>Registry</h1>
+            <div className="box">
+            <h1 style={{color:"purple"}}>Registry</h1>
             <Link to="/">Click to head to home</Link>
+            </div>
+            <div className="space"></div>
+            <div className="inputbox">
             <form onSubmit={addItem}>
                 <label>text input:
             <input type="text" value={textInput} onChange={(e) => setTextInput(e.target.value)}/>
             </label>
-            <input type="submit" value="Submit" />
+            <input className="myButton" type="submit" value="Submit" />
             </form>
             {
                 error ? <span style={{color:"red"}}>Error occured.</span> : null
@@ -57,6 +63,7 @@ function Registry(){
                     )
                 })
             }
+            </div>
         </div>
     )
 }
